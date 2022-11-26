@@ -1,0 +1,216 @@
+@font-face {
+    src: url(../font/MyriadProCond.ttf);
+    font-family: MyriadProCond;
+}
+
+@font-face {
+    src: url(../font/RobotoCondensed-Light.ttf);
+    font-family: RobotoCondensed-Light;
+}
+
+body {
+    font-family: RobotoCondensed-Light;
+}
+
+h2{
+    font-family: MyriadProCond;
+    background-color: #01d936;
+    color: #fff;
+    margin-bottom: 25px;
+    width: 220px;
+    padding: 5px;
+    text-align: center;
+}
+
+/*felső menü*/
+.navbar-brand{
+    font-family: MyriadProCond;
+    background-color: #01d936;
+}
+
+.nav-link:hover{
+    color: #01d936 !important;
+}
+
+nav div ul li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler{
+    margin-left: auto;
+}
+
+.navbar-toggler, .btn:focus{
+    box-shadow: none;
+}
+
+.nav-item{
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+}
+
+/*carousel*/
+h3{
+    font-family: MyriadProCond;
+    color: #01d936
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.3);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 50px;
+}
+
+.carousel-indicators li{
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+}
+
+/*Népszerű termékek*/
+section:nth-child(3){
+    background-image: url(../img/dark-mosaic.png);
+}
+
+#ar{
+    float: right;
+}
+
+/*Kiemelt-Új termékek*/
+section:nth-child(4){
+    background-image: url(../img/paper-mosaic.png);
+    color: #333;
+
+}
+
+#parallax{
+    background-image: url(../img/header3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+#parallax h4{
+    font-size: 8vw;
+    color: #fff;
+    padding: 150px 0;
+    font-family: MyriadProCond;
+}
+
+/*Országos túrák*/
+.btn-outline-dark{
+    color: #01d936;
+    border-color: #01d936;
+    border-radius: 0;
+}
+
+#nyil{
+    width: 15.6%;
+    height: 22px;
+    width: 22px;
+}
+
+/*Footer*/
+footer{
+    background-color: #333;
+}
+
+footer div article ul li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer div article ul li a{
+    text-decoration: none;
+}
+
+footer article:nth-child(3) a{
+    background-color: #5bb95b;
+    border-radius: 0;
+    border: none;
+}
+
+#feliratkozas{
+    background-color: #5bb95b;
+    border: none;
+}
+
+footer article:nth-child(3) a:hover{
+    background-color: rgba(91, 184, 93, 0.4);
+}
+
+#feliratkozas:hover{
+    background-color: rgba(91, 184, 93, 0.4);
+}
+
+footer div article ul li a:hover{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+@media(max-width: 575px){
+    #flex{
+        display: flex !important;
+    }
+    
+    nav div{
+        padding-left: 0px !important;
+    }
+    
+}
+
+@media(max-width: 767px){
+    .nav-item{
+        border: none !important;
+        text-align: right;
+    }
+
+    #carousel{
+        display: none;
+    }
+
+    #parallax{
+        display: none;    
+    }
+
+    h3{
+        margin-top: 30px;
+    }
+
+}  
+
+@media(max-width: 991px){
+    footer div {
+        display: block !important;
+    }
+
+    section:nth-child(3){
+        display: block;
+    }
+
+    #notop{
+        margin-top: 0 !important;
+    }
+
+    #nobot{
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    footer img{
+        width: 40%;
+    }
+}
+
+@media(min-width: 992px){
+    nav div ul li a{
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 1200px){
+    #force{
+        margin-left: 0;
+    }
+}

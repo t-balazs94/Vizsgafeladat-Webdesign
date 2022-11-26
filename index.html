@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Force</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Force-Kerékpárok">
+        <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+        <link href="bootstrap-5.0.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap-extension-5.0.0-alpha3/css/bootstrap-extension-5.0.0.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap-grid.rtl.min.css" type="text/css">
+
+    </head>
+    <body>
+        <!-- felső menü -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-gradient bg-dark sticky-top py-0 text-center">
+            <div class="container-fluid ps-xl-0 ms-xl-0 ms-md-5 ps-sm-0">
+                <a class="navbar-brand fs-1 text-uppercase fw-bold me-0 px-4 ms-xl-0" id="force">Force</a>
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleContent" aria-controls="navbarToggleContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse from-right" id="navbarToggleContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Kezdőlap</a></li>
+                        <li class="nav-item border border-3 border-top-0 border-bottom-0 border-end-0 border-dark"><a class="nav-link" href="#">Termékek</a></li>
+                        <li class="nav-item border border-3 border-top-0 border-bottom-0 border-end-0 border-dark"><a class="nav-link" href="#">Vásárlásról</a></li>
+                        <li class="nav-item border border-3 border-top-0 border-bottom-0 border-end-0 border-dark"><a class="nav-link" href="#">Fizetési módok</a></li>
+                        <li class="nav-item border border-3 border-top-0 border-bottom-0 border-end-0 border-dark"><a class="nav-link" href="#">Boltjaink</a></li>
+                        <li class="nav-item border border-3 border-top-0 border-bottom-0 border-dark"><a class="nav-link" href="#">Kapcsolat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- carousel -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <ul class="carousel-indicators">
+                <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carousel" data-bs-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/header1.jpg" class="d-block w-100" alt="alternative text">
+                    <div class="carousel-caption">
+                        <h3 class="display-3 text-uppercase">Üdvözöljül a Force webshopban</h3>
+                        <p class="fs-1">Minőségi termékek egy helyen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/header2.jpg" class="d-block w-100" alt="alternative text">
+                    <div class="carousel-caption">
+                        <h3 class="display-3 text-uppercase">Üdvözöljül a Force webshopban</h3>
+                        <p class="fs-1">Minőségi termékek egy helyen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/header3.jpg" class="d-block w-100" alt="alternative text">
+                    <div class="carousel-caption">
+                        <h3 class="display-3 text-uppercase">Üdvözöljül a Force webshopban</h3>
+                        <p class="fs-1">Minőségi termékek egy helyen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/header4.jpg" class="d-block w-100" alt="alternative text">
+                    <div class="carousel-caption">
+                        <h3 class="display-3 text-uppercase">Üdvözöljül a Force webshopban</h3>
+                        <p class="fs-1">Minőségi termékek egy helyen.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Népszerű termékek -->
+        <section class="container-fluid">
+            <div class="container py-6">
+                <h2 class="text-uppercase">Népszerű termékek</h2>
+                <div class="row g-5">
+                    <article class="col-12 col-lg-4">
+                        <a class="wb-link" data-whitebox="#group" href="img/5.jpg" title="Bicikli 1">
+                            <img src="img/5.jpg" alt="nepszeru">
+                        </a>
+                        <p class="text-light fs-1">Gintino Magna</p>
+                        <p class="text-light fs-1" id="ar"><span>102.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-4" id="notop">
+                        <a class="wb-link" data-whitebox="#group" href="img/4.jpg" title="Bicikli 2">
+                            <img src="img/4.jpg" alt="nepszeru">
+                        </a>
+                        <p class="text-light fs-1">Fusce Tortor</p>
+                        <p class="text-light fs-1" id="ar"><span>137.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-4" id="notop">
+                        <a class="wb-link" data-whitebox="#group" href="img/8.jpg" title="Bicikli 3">
+                            <img src="img/8.jpg" alt="nepszeru">
+                        </a>
+                        <p class="text-light fs-1">Gravida Foxcle</p>
+                        <p class="text-light fs-1" id="ar"><span>94.000 Ft</span></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kiemelt termékek -->
+        <section class="container-fluid">
+            <div class="container py-6" id="nobot">
+                <h2 class="text-uppercase">Új termékek</h2>
+                <div class="row g-6">
+                    <article class="col-12 col-lg-4 mb-5">
+                        <div>
+                            <img src="img/1.jpg" alt="sárga bicikli">
+                        </div>
+                        <p class="fs-1">Kerékpár1</p>
+                        <p class="fs-1" id="ar"><span>102.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-4 mb-5">
+                        <div>
+                            <img src="img/2.jpg" alt="fehér-piros bicikli">
+                        </div>
+                        <p class="fs-1">Kerékpár2</p>
+                        <p class="fs-1" id="ar"><span>137.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-4 mb-5">
+                        <div>
+                            <img src="img/12.jpg" alt="sárga táska">
+                        </div>
+                        <p class="fs-1">Táska1</p>
+                        <p class="fs-1" id="ar"><span>34.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-4 mb-5">
+                        <div>
+                            <img src="img/13.jpg" alt="szürke táska">
+                        </div>
+                        <p class="fs-1">Táska2</p>
+                        <p class="fs-1" id="ar"><span>22.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-4 mb-5">
+                        <div>
+                            <img src="img/3.jpg" alt="piros-fehér bicikli">
+                        </div>
+                        <p class="fs-1">Kerékpár3</p>
+                        <p class="fs-1" id="ar"><span>115.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-4 mb-5" id="nobot">
+                        <div>
+                            <img src="img/6.jpg" alt="fehér bicikli">
+                        </div>
+                        <p class="fs-1">Kerékpár4</p>
+                        <p class="fs-1" id="ar"><span>104.000 Ft</span></p>
+                    </article>
+                </div>
+            </div>
+
+            <!--parallax -->
+            <div id="parallax" class="d-sm-none d-lg-block">
+                <h4 class="text-center">Keresse akciós termékeinket!</h4>
+            </div>
+
+            <!--Új termékek -->
+            <div class="container mb-5 mt-5 pb-5">
+                <h2 class="text-uppercase">Kiemelt termékek</h2>
+                <div class="row g-4">
+                    <article class="col-12 col-lg-3">
+                        <div>
+                            <img src="img/1.jpg" alt="sárga bicikli">
+                        </div>
+                        <p class="fs-1">Kerékpár1</p>
+                        <p class="fs-1" id="ar"><span>94.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-3">
+                        <div>
+                            <img src="img/2.jpg" alt="fehér-piros bicikli">
+                        </div>
+                        <p class="fs-1">Táska1</p>
+                        <p class="fs-1" id="ar"><span>34.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-3">
+                        <div>
+                            <img src="img/12.jpg" alt="sárga táska">
+                        </div>
+                        <p class="fs-1">Kerékpár2</p>
+                        <p class="fs-1" id="ar"><span>102.000 Ft</span></p>
+                    </article>
+                    <article class="col-12 col-lg-3">
+                        <div>
+                            <img src="img/13.jpg" alt="szürke táska">
+                        </div>
+                        <p class="fs-1">Kerékpár3</p>
+                        <p class="fs-1" id="ar"><span>137.000 Ft</span></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Országos túrák -->
+        <section>
+            <div class="container mt-5 pt-5">
+                <h2 class="text-uppercase mb-md-5 mb-sm-0">Országos túrák</h2>
+                <div class="row">
+                    <article class="col-12 col-lg-4">
+                        <h3 class="text-uppercase">Balaton körüli túra</h3>
+                        <img src="img/thumb1.jpg" alt="túrázók1"/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dui ac lectus laoreet venenatis nec sed sem. Integer ultrices massa at lacus porttitor, nec dapibus est blandit. Phasellus fermentum turpis id tortor lacinia fermentum. Vivamus dolor arcu, luctus sit amet eros vel, aliquet fermentum nunc.</p>
+                        <div class="justify-content-around" id="flex">
+                            <button type="button" class="btn btn-outline-dark fs-4 fw-bold mb-3 col-lg-push-3 col-md-push-5 col-sm-push-4">Részletek<img src="img/nyil.png" alt="nyil" class="px-1" id="nyil"/></button>
+                        </div>
+                    </article>
+                    <article class="col-12 col-lg-4">
+                        <h3 class="text-uppercase">Budapest-Mátra-Budapest</h3>
+                        <img src="img/thumb2.jpg" alt="túrázók2"/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dui ac lectus laoreet venenatis nec sed sem. Integer ultrices massa at lacus porttitor, nec dapibus est blandit. Phasellus fermentum turpis id tortor lacinia fermentum. Vivamus dolor arcu, luctus sit amet eros vel, aliquet fermentum nunc.</p>
+                        <div class="justify-content-around" id="flex">
+                            <button type="button" class="btn btn-outline-dark fs-4 fw-bold mb-3 col-lg-push-3 col-md-push-5 col-sm-push-4">Részletek<img src="img/nyil.png" alt="nyil" class="px-1" id="nyil"/></button>
+                        </div>
+                    </article>
+                    <article class="col-12 col-lg-4">
+                        <h3 class="text-uppercase">Duna vonal-túra</h3>
+                        <img src="img/thumb3.jpg" alt="túrázók3"/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dui ac lectus laoreet venenatis nec sed sem. Integer ultrices massa at lacus porttitor, nec dapibus est blandit. Phasellus fermentum turpis id tortor lacinia fermentum. Vivamus dolor arcu, luctus sit amet eros vel, aliquet fermentum nunc.</p>
+                        <div class="justify-content-around" id="flex">
+                            <button type="button" class="btn btn-outline-dark fs-4 fw-bold mb-3 col-lg-push-3 col-md-push-5 col-sm-push-4 mb-sm-5">Részletek<img src="img/nyil.png" alt="nyil" class="px-1" id="nyil"/></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-lg-5 pt-3">
+            <div class="container">
+                <div class="row">
+                    <article class="col mt-lg-5 mt-md-5">
+                        <h3 class="text-uppercase">Információk</h3>
+                        <ul class="ps-0">
+                            <li class="border-bottom border-light pb-3 pt-3"><a href="" class="text-light fs-5 text-uppercase">Rólunk</a></li>
+                            <li class="border-bottom border-light pb-3 pt-3"><a href="" class="text-light fs-5 text-uppercase">Kapcsolat</a></li>
+                            <li class="border-bottom border-light pb-3 pt-3"><a href="" class="text-light fs-5 text-uppercase" >Blog</a></li>
+                            <li class="border-bottom border-light pb-3 pt-3"><a href="" class="text-light fs-5 text-uppercase">Felhasználói szabályzat</a></li>
+                            <li class="border-bottom border-light pb-3 pt-3"><a href="" class="text-light fs-5 text-uppercase">Adatkezelési nyilatkozat</a></li>
+                        </ul>
+                    </article>
+                    <article class="col mt-lg-5 mt-md-3">
+                        <h3 class="text-uppercase">Ha segítség kell</h3>
+                        <ul class="ps-0">
+                            <li class="border-bottom border-light pb-3 pt-3"><a href="" class="text-light fs-5 text-uppercase">Élő chat</a></li>
+                            <li class="border-bottom border-light pb-3 pt-3"><a href="" class="text-light fs-5 text-uppercase">Visszahívást kérek</a></li>
+                            <li class="border-bottom border-light pb-3 pt-3"><a href="" class="text-light fs-5 text-uppercase">Elérhetőségek</a></li>
+                            <li class="border-bottom border-light pb-3 pt-3"><a href="" class="text-light fs-5 text-uppercase">Honlap térkép</a></li>
+                        </ul>
+                    </article>
+                    <article class="col mt-lg-5 mt-md-3">
+                        <h3 class="text-uppercase">Termékfelhő</h3>
+                        <a class="btn btn-primary p-1 m-1" href="#" role="button">kerékpár</a>
+                        <a class="btn btn-primary p-1 m-1" href="#" role="button">táska</a>
+                        <a class="btn btn-primary p-1 m-1" href="#" role="button">hátizsák</a>
+                        <a class="btn btn-primary p-1 m-1" href="#" role="button">sport</a>
+                        <a class="btn btn-primary p-1 m-1" href="#" role="button">nike</a>
+                        <a class="btn btn-primary p-1 m-1" href="#" role="button">denim</a>
+                        <a class="btn btn-primary p-1 m-1" href="#" role="button">rucanor</a>
+                    </article>
+                    <article class="col mt-lg-5 mt-md-3">
+                        <h3 class="text-uppercase">Hírlevél</h3>
+                        <form>
+                            <div class="my-3">
+                                <input class="form-control" type="email" id="email" placeholder="E-mail cím">
+                            </div>
+                            <input id="feliratkozas" class="btn btn-primary" type="button" value="Feliratkozás">
+                        </form>
+                        <p class="text-light mt-2 mb-5">Feliratkozásával értesülhet legfrisebb híreinkről. Soha nem küldünk Önnek spam levelet.<p>
+                        <p class="text-light">Fizetési lehetőségek:</p>
+                        <img src="img/fizmodok.png" alt="bank "/>
+                    </article>
+                </div>
+            </div>
+        </footer>
+        <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <script src="bootstrap-extension-5.0.0-alpha3/js/bootstrap-extension-5.0.0.js" type="text/javascript"></script>
+    </body>
+</html>

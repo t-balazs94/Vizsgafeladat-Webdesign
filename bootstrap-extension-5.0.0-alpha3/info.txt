@@ -1,0 +1,8 @@
+img tag mérete alapesetben 100%
+be-accordion componens megszűnt
+.bg-purple helyett .bg-dream
+.border-strong megszűnt, helyette: .border-6 - .border-10
+.btn-capsule megszűnt
+Alpha Slider Carousel megszűnt
+.ph-light és .ph-dark nem a formhoz, hanem az űrlapelemekhez tartozik
+.be-formcheck megszűnt
